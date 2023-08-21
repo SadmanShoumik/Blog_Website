@@ -51,13 +51,18 @@
                         <button class="btn btn-secondary" style="background: black; font-weight: bolder;" type="submit" name="search" value="yes">Search</button>
                     </form>
 
-                    <h2 style="font-size: 55px; font-weight: bolder;">Online Web Blog</h2>
+                    <div style="position: absolute; left: 793px;"><h2 style="font-size: 55px; font-weight: bolder;">Online Web Blog</h2></div>
 
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
                             <img src="Resources/profile.png" width="40px" height="40px">
-                            <a class="nav-link active" href="profile.php" style="margin-left:20px; margin-right:20px; color: black; font-weight: bolder;">Profile</a>
+                            <a class="nav-link active" href="profile.php?u_id=<?php echo $u_id; ?>" style="margin-left:20px; margin-right:20px; color: black; font-weight: bolder;">Profile</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <img src="Resources/newblog.png" width="40px" height="40px">
+                            <a class="nav-link active" href="newblog.php?u_id=<?php echo $u_id; ?>" style="margin-left:20px; margin-right:20px; color: black; font-weight: bolder;">New Blog</a>
                         </li>
 
                         <li class="nav-item">
